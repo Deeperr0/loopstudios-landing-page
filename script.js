@@ -1,5 +1,6 @@
 const creationsList = document.querySelector(".creations__list");
 const screenWidth = window.innerWidth;
+const mobileMenu = document.querySelector(".mobile__menu")
 try {
 	fetch("cards.json")
 		.then((response) => {
@@ -15,6 +16,12 @@ try {
                 </div>`;
 			});
 		});
+	function handleMenu(){
+		mobileMenu.classList.remove("hidden");
+	}
+	function closeMenu(){
+		mobileMenu.classList.add("hidden");
+	}
 } catch (error) {
 	console.log("Error: ", error);
 }
