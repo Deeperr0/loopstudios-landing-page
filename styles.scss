@@ -96,6 +96,7 @@
 	list-style-type: none;
 }
 .links__item {
+	font-family: $alata;
 	line-height: 30px;
 	font-size: 16px;
 	position: relative;
@@ -145,15 +146,16 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	width: 705px;
-	margin-left: -165px;
+	width: 800px;
+	margin-left: -190px;
 	background-color: $white;
 	height: 315px;
-	padding: 100px;
+	padding-left: 90px;
+	padding-top: 100px;
 }
 .interactive__title {
 	font-family: $josefin;
-	font-size: 32px;
+	font-size: 48px;
 	font-weight: 300;
 }
 .interactive__description {
@@ -260,6 +262,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	color: $dark-gray;
+	font-family: $alata;
 	.links {
 		color: $white;
 	}
@@ -272,6 +275,7 @@ footer {
 	text-align: center;
 	color: $white;
 	padding-bottom: 45px;
+	font-family: $alata;
 }
 .attribution a {
 	color: $dark-gray;
@@ -305,6 +309,11 @@ footer {
 	}
 	.interactive__description {
 		line-height: 150%;
+	}
+	.footer__bottom {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
 	}
 }
 @media screen and (width <= 480px) {

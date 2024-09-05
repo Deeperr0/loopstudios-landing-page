@@ -99,6 +99,7 @@
 }
 
 .links__item {
+  font-family: "Alata", sans-serif;
   line-height: 30px;
   font-size: 16px;
   position: relative;
@@ -156,16 +157,17 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 705px;
-  margin-left: -165px;
+  width: 800px;
+  margin-left: -190px;
   background-color: hsl(0, 0%, 100%);
   height: 315px;
-  padding: 100px;
+  padding-left: 90px;
+  padding-top: 100px;
 }
 
 .interactive__title {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 300;
 }
 
@@ -291,6 +293,7 @@ footer {
   display: flex;
   justify-content: space-between;
   color: hsl(0, 0%, 55%);
+  font-family: "Alata", sans-serif;
 }
 .footer__bottom .links {
   color: hsl(0, 0%, 100%);
@@ -304,6 +307,7 @@ footer {
   text-align: center;
   color: hsl(0, 0%, 100%);
   padding-bottom: 45px;
+  font-family: "Alata", sans-serif;
 }
 
 .attribution a {
@@ -340,6 +344,11 @@ footer {
   }
   .interactive__description {
     line-height: 150%;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 }
 @media screen and (width <= 480px) {
