@@ -167,10 +167,11 @@
 	line-height: 150%;
 }
 .creations {
+	font-family: $alata;
 	@include padding-x(165px);
 	margin-top: 145px;
-	padding-bottom: 40px;
-	.creations__link {
+	padding-bottom: 200px;
+	.creations__link__mobile {
 		display: none;
 	}
 }
@@ -187,10 +188,10 @@
 }
 .creations__link {
 	border: 1px solid $black;
-	@include padding-x(40px);
+	@include padding-x(50px);
 	text-decoration: none;
 	font-size: 12px;
-	line-height: 40px;
+	line-height: 30px;
 	letter-spacing: 2px;
 	color: $black;
 	background-color: $white;
@@ -386,6 +387,18 @@ footer {
 		.creations__link {
 			display: none;
 		}
+	}
+	.creations__link__mobile {
+		font-family: $alata;
+		border: 1px solid $black;
+		@include padding-x(150px);
+		text-decoration: none;
+		font-size: 12px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		color: $black;
+		background-color: $white;
+		display: block !important;
 	}
 	.creations__list {
 		width: 100%;
